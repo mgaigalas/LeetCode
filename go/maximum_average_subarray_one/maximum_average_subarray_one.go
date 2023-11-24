@@ -1,4 +1,4 @@
-// Package maxsubarrayone contains solution for LeetCode problem: #643. Maximum Average Subarray Iy.
+// Package maxsubarrayone contains solution for LeetCode problem: #643. Maximum Average Subarray I.
 package maxsubarrayone
 
 // findMaxAverage returns contiguous subarray whose length is equal to k that has the maximum average value.
