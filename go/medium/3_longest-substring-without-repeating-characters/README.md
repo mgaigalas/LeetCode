@@ -1,4 +1,4 @@
-# [MEDIUM] #3. Longest Substring Without Repeating Characters
+# #3. Longest Substring Without Repeating Characters
 
 <p>Given a string <code>s</code>, find the length of the <strong>longest substring</strong> 
 without repeating characters.</p>

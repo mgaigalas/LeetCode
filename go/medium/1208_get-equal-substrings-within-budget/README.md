@@ -1,4 +1,4 @@
-# [MEDIUM] #1208. Get Equal Substrings Within Budget
+# #1208. Get Equal Substrings Within Budget
 
 <p>You are given two strings <code>s</code> and <code>t</code> of the same length and an integer <code>maxCost</code>.</p>
 

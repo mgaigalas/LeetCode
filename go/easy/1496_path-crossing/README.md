@@ -1,4 +1,4 @@
-# [EASY] #1496. Path Crossing
+# #1496. Path Crossing
 
 <p>Given a string <code>path</code>, where <code>path[i] = 'N'</code>, <code>'S'</code>, <code>'E'</code> or <code>'W'</code>, each representing moving one unit north, south, east, or west, respectively. You start at the origin <code>(0, 0)</code> on a 2D plane and walk on the path specified by <code>path</code>.</p>
 

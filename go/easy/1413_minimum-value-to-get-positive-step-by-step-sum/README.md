@@ -1,4 +1,4 @@
-# [EASY] #1413. Minimum Value to Get Positive Step by Step Sum
+# #1413. Minimum Value to Get Positive Step by Step Sum
 
 <p>Given an array of integers&nbsp;<code>nums</code>, you start with an initial <strong>positive</strong> value <em>startValue</em><em>.</em></p>
 

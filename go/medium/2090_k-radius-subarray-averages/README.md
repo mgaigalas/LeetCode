@@ -1,4 +1,4 @@
-# [MEDIUM] #2090. K Radius Subarray Averages
+# #2090. K Radius Subarray Averages
 
 <p>You are given a <strong>0-indexed</strong> array <code>nums</code> of <code>n</code> integers, and an integer <code>k</code>.</p>
 

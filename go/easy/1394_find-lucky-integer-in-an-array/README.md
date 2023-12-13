@@ -1,4 +1,4 @@
-# [EASY] #1394. Find Lucky Integer in an Array
+# #1394. Find Lucky Integer in an Array
 
 <p>Given an array of integers <code>arr</code>, a <strong>lucky integer</strong> is an integer that has a frequency in the array equal to its value.</p>
 

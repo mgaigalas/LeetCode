@@ -1,4 +1,4 @@
-# [EASY] #724. Find Pivot Index
+# #724. Find Pivot Index
 
 <p>Given an array of integers <code>nums</code>, calculate the <strong>pivot index</strong> of this array.</p>
 

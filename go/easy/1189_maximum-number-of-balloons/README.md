@@ -1,4 +1,4 @@
-# [EASY] #1189. Maximum Number of Balloons
+# #1189. Maximum Number of Balloons
 
 <p>Given a string <code>text</code>, you want to use the characters of <code>text</code> to form as many instances of the word <strong>"balloon"</strong> as possible.</p>
 

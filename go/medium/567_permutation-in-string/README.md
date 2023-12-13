@@ -1,4 +1,4 @@
-# [MEDIUM] #567. Permutation in String
+# #567. Permutation in String
 
 <p>Given two strings <code>s1</code> and <code>s2</code>, return <code>true</code><em> if </em><code>s2</code><em> contains a permutation of </em><code>s1</code><em>, or </em><code>false</code><em> otherwise</em>.</p>
 

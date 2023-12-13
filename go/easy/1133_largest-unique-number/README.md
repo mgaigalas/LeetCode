@@ -1,4 +1,4 @@
-# [EASY] #1133. Largest Unique Number
+# #1133. Largest Unique Number
 
 <p>Given an integer array <code>nums</code>, return <em>the largest integer that only occurs once</em>. If no integer occurs once, return <code>-1</code>.</p>
 

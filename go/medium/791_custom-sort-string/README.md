@@ -1,4 +1,4 @@
-# [MEDIUM] #791. Custom Sort String
+# #791. Custom Sort String
 
 <p>You are given two strings order and s. All the characters of <code>order</code> are <strong>unique</strong> and were sorted in some custom order previously.</p>
 

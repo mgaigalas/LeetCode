@@ -1,4 +1,4 @@
-# [EASY] #303. Range Sum Query - Immutable
+# #303. Range Sum Query - Immutable
 
 <p>Given an integer array <code>nums</code>, handle multiple queries of the following type:</p>
 

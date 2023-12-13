@@ -1,4 +1,4 @@
-# [EASY] #917. Reverse Only Letters
+# #917. Reverse Only Letters
 
 <p>Given a string <code>s</code>, reverse the string according to the following rules:</p>
 
