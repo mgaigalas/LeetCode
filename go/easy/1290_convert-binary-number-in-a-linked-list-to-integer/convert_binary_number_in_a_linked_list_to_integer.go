@@ -1,4 +1,5 @@
-// Package middleoflinkedlist contains solution for LeetCode problem: #876. Middle of the Linked List.
+// Package convbinarynuminlinkedlsttoint contains solution for LeetCode problem: #1290. Convert Binary Number in a
+// Linked List to Integer.
 package convbinarynuminlinkedlsttoint
 
 // Definition for singly-linked list.
