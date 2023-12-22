@@ -1,7 +1,7 @@
 // Package palindromelinkedlist contains solution for LeetCode problem: #234. Palindrome Linked List.
 package palindromelinkedlist
 
-// Definition for singly-linked list.
+// ListNode is a struct representing singly-linked list.
 type ListNode struct {
 	Val  int
 	Next *ListNode

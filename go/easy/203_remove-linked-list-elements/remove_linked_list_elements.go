@@ -1,7 +1,7 @@
 // Package rmlinkedlistelements contains solution for LeetCode problem: #203. Remove Linked List Elements.
 package rmlinkedlistelements
 
-// Definition for singly-linked list.
+// ListNode is a struct representing singly-linked list.
 type ListNode struct {
 	Val  int
 	Next *ListNode

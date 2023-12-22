@@ -2,7 +2,7 @@
 // Linked List.
 package deletemidnodeoflinkedlist
 
-// Definition for singly-linked list.
+// ListNode is a struct representing singly-linked list.
 type ListNode struct {
 	Val  int
 	Next *ListNode

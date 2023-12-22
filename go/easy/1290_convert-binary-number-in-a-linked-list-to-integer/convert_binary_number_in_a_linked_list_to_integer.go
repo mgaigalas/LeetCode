@@ -2,7 +2,7 @@
 // Linked List to Integer.
 package convbinarynuminlinkedlsttoint
 
-// Definition for singly-linked list.
+// ListNode is a struct representing singly-linked list.
 type ListNode struct {
 	Val  int
 	Next *ListNode

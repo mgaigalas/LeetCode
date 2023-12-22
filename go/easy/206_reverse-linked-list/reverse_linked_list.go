@@ -1,7 +1,7 @@
 // Package reverselinkedlist contains solution for LeetCode problem: #92. Reverse Linked List II.
 package reverselinkedlist
 
-// Definition for singly-linked list.
+// ListNode is a struct representing singly-linked list.
 type ListNode struct {
 	Val  int
 	Next *ListNode

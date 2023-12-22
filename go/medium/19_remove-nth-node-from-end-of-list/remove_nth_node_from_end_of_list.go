@@ -1,7 +1,7 @@
 // Package removenthnodefromendoflist contains solution for LeetCode problem: #19. Remove Nth Node From End of List.
 package removenthnodefromendoflist
 
-// Definition for singly-linked list.
+// ListNode is a struct representing singly-linked list.
 type ListNode struct {
 	Val  int
 	Next *ListNode

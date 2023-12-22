@@ -1,7 +1,7 @@
 // Package middleoflinkedlist contains solution for LeetCode problem: #876. Middle of the Linked List.
 package middleoflinkedlist
 
-// Definition for singly-linked list.
+// ListNode is a struct representing singly-linked list.
 type ListNode struct {
 	Val  int
 	Next *ListNode
