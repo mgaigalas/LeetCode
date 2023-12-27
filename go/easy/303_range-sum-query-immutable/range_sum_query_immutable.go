@@ -1,7 +1,7 @@
 // Package rangesumqueryimtbl contains solution for LeetCode problem: #303. Range Sum Query - Immutable.
 package rangesumqueryimtbl
 
-// NumArray type is an iternal representation of pre-processed integer numbers.
+// NumArray type is an internal representation of pre-processed integer numbers.
 type NumArray struct {
 	nums []int
 }
