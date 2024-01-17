@@ -11,12 +11,12 @@ func countComponents(n int, edges [][]int) int {
 	}
 
 	seen := make([]bool, n)
-	var dfs func(graphs [][]int, source int, seen []bool)
-	dfs = func(graphs [][]int, source int, seen []bool) {
+	var dfs func(source int)
+	dfs = func(source int) {
 		if !seen[source] {
 			seen[source] = true
 			for _, v := range graphs[source] {
-				dfs(graphs, v, seen)
+				dfs(v)
 			}
 		}
 	}
@@ -24,7 +24,7 @@ func countComponents(n int, edges [][]int) int {
 	var res int
 	for i := 0; i < n; i++ {
 		if !seen[i] {
-			dfs(graphs, i, seen)
+			dfs(i)
 			res++
 		}
 	}
