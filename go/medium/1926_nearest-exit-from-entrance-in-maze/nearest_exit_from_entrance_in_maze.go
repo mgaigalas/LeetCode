@@ -2,7 +2,7 @@
 // #1926. Nearest Exit from Entrance in Maze.
 package nearestexitfromentranceinmaze
 
-// State contains data about current step within BFS
+// State contains data about current step within BFS.
 type State struct {
 	row, col int
 	steps    int

@@ -3,7 +3,7 @@ package openthelock
 
 import "strings"
 
-// State contains data about current step within BFS
+// State contains data about current step within BFS.
 type State struct {
 	code  string
 	turns int
