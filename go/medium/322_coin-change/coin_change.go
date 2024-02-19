@@ -18,6 +18,8 @@ func coinChange(coins []int, amount int) int {
 
 	for _, c := range coins {
 		for r := c; r <= amount; r++ {
+			// second argument can overflow to 64-bit integer
+			// this is OK as Go int type is AT LEAST 32-bit integer
 			dp[r] = min(dp[r], 1+dp[r-c])
 		}
 	}
