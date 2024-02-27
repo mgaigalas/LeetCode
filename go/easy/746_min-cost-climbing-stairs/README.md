@@ -40,7 +40,7 @@ The total cost is 6.
 
 ## Notes
 
-Dynamic Programming - Top-Down approach with memoization
+Dynamic Programming - Top-Down approach (with memoization)
 
 ```go
 // Package mincostclimbingstairs contains solution for LeetCode problem: #746. Min Cost Climbing Stairs.

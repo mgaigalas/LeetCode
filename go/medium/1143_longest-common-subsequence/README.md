@@ -42,7 +42,7 @@
 
 ## Notes 
 
-Dynamic Programming - Top-Down approach with memoization
+Dynamic Programming - Top-Down approach (with memoization)
 
 ```go
 // Package longestcommonsubsequence contains solution for LeetCode problem: #1143. Longest Common Subsequence.

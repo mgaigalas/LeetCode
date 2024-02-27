@@ -33,7 +33,7 @@
 
 ## Notes
 
-Dynamic Programming - Top-Down approach with memoization
+Dynamic Programming - Top-Down approach (with memoization)
 
 ```go
 // Package climbingstairs contains solution for LeetCode problem: #70. Climbing Stairs.
