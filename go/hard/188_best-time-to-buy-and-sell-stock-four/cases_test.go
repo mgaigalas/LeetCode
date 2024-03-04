@@ -11,7 +11,7 @@ var testCases = []struct {
 	want int
 }{
 	{
-		name: "k = 2, prices = [2,4,1]",
+		name: "case: k = 2, prices = [2,4,1]",
 		args: args{
 			k:      2,
 			prices: []int{2, 4, 1},
@@ -19,7 +19,7 @@ var testCases = []struct {
 		want: 2,
 	},
 	{
-		name: "k = 2, prices = [3,2,6,5,0,3]",
+		name: "case: k = 2, prices = [3,2,6,5,0,3]",
 		args: args{
 			k:      2,
 			prices: []int{3, 2, 6, 5, 0, 3},
