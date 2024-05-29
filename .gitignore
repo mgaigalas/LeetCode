@@ -10,3 +10,11 @@ go.work
 
 **/.idea/*
 .DS_Store
+.iml
+
+**/.gradle/*
+**/gradle/*
+**/build/*
+gradlew
+gradlew.bat
+settings.gradle
