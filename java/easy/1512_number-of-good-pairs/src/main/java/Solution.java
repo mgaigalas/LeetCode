@@ -8,7 +8,7 @@ import java.util.HashMap;
  */
 public class Solution {
     /**
-     * Given an array of integers nums, return the number of good pairs.
+     * Given an array of integers nums, returns the number of good pairs.
      *
      * @param nums an array of integers
      * @return number of good pairs

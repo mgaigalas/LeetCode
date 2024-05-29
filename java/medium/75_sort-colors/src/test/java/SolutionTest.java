@@ -11,20 +11,22 @@ import java.util.stream.Stream;
 class SolutionTest {
     @ParameterizedTest(name = "{0}")
     @MethodSource("argumentSource")
-    void numIdenticalPairs(String name, Args args, int want) {
-        Assertions.assertEquals(want, new Solution().numIdenticalPairs(args.nums));
+    void sortColors(String name, Args args, int[] want) {
+        var nums = args.nums;
+        new Solution().sortColors(nums);
+        Assertions.assertArrayEquals(want, nums);
     }
 
     static Stream<Arguments> argumentSource() {
         return Stream.of(
                 Arguments.of(
-                        "case: nums = [1,2,3,1,1,3]",
-                        new Args(new int[]{1, 2, 3, 1, 1, 3}),
-                        4),
+                        "case: nums = [2,0,2,1,1,0]",
+                        new Args(new int[]{2, 0, 2, 1, 1, 0}),
+                        new int[]{0, 0, 1, 1, 2, 2}),
                 Arguments.of(
-                        "case: nums = [1,1,1,1]",
-                        new Args(new int[]{1, 1, 1, 1}),
-                        6));
+                        "case: nums = [2,0,1]",
+                        new Args(new int[]{2, 0, 1}),
+                        new int[]{0, 1, 2}));
     }
 
     record Args(int[] nums) {
