@@ -6,13 +6,13 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 /**
- * @author Marius Gaigalas on 23/05/2024
+ * @author Marius Gaigalas on 29/05/2024
  */
 class SolutionTest {
     @ParameterizedTest(name = "{0}")
     @MethodSource("argumentSource")
     void sortColors(String name, Args args, int[] want) {
-        var nums = args.nums;
+        final var nums = args.nums;
         new Solution().sortColors(nums);
         Assertions.assertArrayEquals(want, nums);
     }

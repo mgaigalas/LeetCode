@@ -7,6 +7,7 @@
 public class Solution {
     /**
      * Given an array nums with n objects, returns sorted in-place objects.
+     * This solution uses Selection Sort.
      *
      * @param nums an array of integers
      */

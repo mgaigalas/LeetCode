@@ -30,3 +30,50 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong>&nbsp;Could you come up with a one-pass algorithm using only&nbsp;constant extra space?</p>
+
+## Notes
+
+Solution using Counting Sort
+
+```java
+import java.util.Arrays;
+
+/**
+ * Solution class contains solution for LeetCode problem:
+ * #75. Sort Colors.
+ *
+ * @author Marius Gaigalas on 29/05/2024
+ */
+public class Solution {
+    /**
+     * Given an array nums with n objects, returns sorted in-place objects.
+     *
+     * @param nums an array of integers
+     */
+    @SuppressWarnings({"OptionalGetWithoutIsPresent", "ManualArrayCopy"})
+    public void sortColors(int[] nums) {
+        final var K = Arrays.stream(nums).max().getAsInt();
+        final var counts = new int[K+1];
+        for (int num : nums) {
+            counts[num]++;
+        }
+
+        var startingIndex = 0;
+        for (int i = 0; i < K + 1; i++) {
+            var count = counts[i];
+            counts[i] = startingIndex;
+            startingIndex += count;
+        }
+
+        final var sortedArr = new int[nums.length];
+        for (int num : nums) {
+            sortedArr[counts[num]] = num;
+            counts[num]++;
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = sortedArr[i];
+        }
+    }
+}
+```
