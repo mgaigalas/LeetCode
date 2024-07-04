@@ -18,3 +18,4 @@ go.work
 gradlew
 gradlew.bat
 settings.gradle
+support/
