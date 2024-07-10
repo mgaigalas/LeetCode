@@ -4,29 +4,30 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Stream;
 
 /**
- * @author Marius Gaigalas on 30/05/2024
+ * @author Marius Gaigalas on 09/07/2024
  */
 class SolutionTest {
     @ParameterizedTest(name = "{0}")
     @MethodSource("argumentSource")
-    void insertionSortList(String name, Args args, int[] want) {
-        final var got = new Solution().insertionSortList(args.head());
+    void mergeNodes(String name, Args args, int[] want) {
+        final var got = new Solution().mergeNodes(args.head);
         Assertions.assertArrayEquals(want, toArray(got));
     }
 
     static Stream<Arguments> argumentSource() {
         return Stream.of(
                 Arguments.of(
-                        "case: head = [4,2,1,3]",
-                        toArgs(new int[]{4, 2, 1, 3}),
-                        new int[]{1, 2, 3, 4}),
+                        "case: head = [0,3,1,0,4,5,2,0]",
+                        toArgs(new int[]{0, 3, 1, 0, 4, 5, 2, 0}),
+                        new int[]{4, 11}),
                 Arguments.of(
-                        "case: head = [-1,5,3,4,0]",
-                        toArgs(new int[]{-1, 5, 3, 4, 0}),
-                        new int[]{-1, 0, 3, 4, 5}));
+                        "case: head = [0,1,0,3,0,2,2,0]",
+                        toArgs(new int[]{0, 1, 0, 3, 0, 2, 2, 0}),
+                        new int[]{1, 3, 4}));
     }
 
     private static Args toArgs(int[] arr) {
@@ -35,7 +36,7 @@ class SolutionTest {
         }
 
         var node = new ListNode(arr[0]);
-        final var head = node;
+        var head = node;
         for (int i = 1; i < arr.length; i++) {
             var next = new ListNode(arr[i]);
             node.next = next;
@@ -50,8 +51,8 @@ class SolutionTest {
             return new int[0];
         }
 
-        final var list = new ArrayList<Integer>();
-        ListNode node = head;
+        final List<Integer> list = new ArrayList<>();
+        var node = head;
         while (node != null) {
             list.add(node.val);
             node = node.next;

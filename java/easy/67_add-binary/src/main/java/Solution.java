@@ -1,5 +1,3 @@
-import java.math.BigInteger;
-
 /**
  * Solution class contains solution for LeetCode problem:
  * #67. Add Binary.
@@ -15,14 +13,39 @@ public class Solution {
      * @return binary sum as a string
      */
     public String addBinary(String a, String b) {
-        var x = new BigInteger(a, 2);
-        var y = new BigInteger(b, 2);
-        while (!y.equals(BigInteger.ZERO)) {
-            var answer = x.xor(y);
-            var carry = (x.and(y)).shiftLeft(1);
-            x = answer;
-            y = carry;
+        var n = a.length() - 1;
+        var m = b.length() - 1;
+        var carry = 0;
+
+        var sb = new StringBuilder();
+        while (n >= 0 || m >= 0 || carry > 0) {
+            char aDigit = toCharDigitWithIndex(a, n);
+            if (aDigit == '1') {
+                carry++;
+            }
+
+            char bDigit = toCharDigitWithIndex(b, m);
+            if (bDigit == '1') {
+                carry++;
+            }
+
+            if (carry % 2 == 1) {
+                sb.append('1');
+            } else {
+                sb.append('0');
+            }
+
+            carry /= 2;
+            n--;
+            m--;
         }
-        return x.toString(2);
+        return sb.reverse().toString();
+    }
+
+    private static char toCharDigitWithIndex(String str, int idx) {
+        if (idx < 0) {
+            return '0';
+        }
+        return str.charAt(idx);
     }
 }
