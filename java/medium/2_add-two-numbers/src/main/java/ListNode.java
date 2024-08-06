@@ -5,7 +5,7 @@
  * @author Marius Gaigalas on 10/07/2024
  */
 @SuppressWarnings("unused")
-public class ListNode {
+public final class ListNode {
     int val;
     ListNode next;
 

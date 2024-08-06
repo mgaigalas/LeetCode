@@ -4,7 +4,7 @@
  *
  * <p>
  * Definition for singly-linked list.
- * public class ListNode {
+ * public final class ListNode {
  *     int val;
  *     ListNode next;
  *     ListNode() {}

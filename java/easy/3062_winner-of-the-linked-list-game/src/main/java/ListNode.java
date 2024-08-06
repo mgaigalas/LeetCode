@@ -2,7 +2,7 @@
  * ListNode represents a node in a custom linked list.
  * NOTE: this class was provided by LeetCode.
  *
- * @author Marius Gaigalas on 30/05/2024
+ * @author Marius Gaigalas on 06/08/2024
  */
 @SuppressWarnings("unused")
 public final class ListNode {
