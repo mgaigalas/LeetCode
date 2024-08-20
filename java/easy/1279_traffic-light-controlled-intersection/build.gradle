@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+final var LOMBOK_VERSION = '1.18.34'
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.assertj:assertj-core:3.26.3'
+    testImplementation 'ch.qos.logback:logback-classic:1.5.7'
+    testCompileOnly "org.projectlombok:lombok:$LOMBOK_VERSION"
+    testAnnotationProcessor "org.projectlombok:lombok:$LOMBOK_VERSION"
+}
+
+test {
+    useJUnitPlatform()
+}
