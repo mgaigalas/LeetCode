@@ -16,34 +16,23 @@ public class Solution {
      * @return array-form of the integer num + k
      */
     public List<Integer> addToArrayForm(int[] num, int k) {
-        var n = num.length - 1;
-        var curr = k;
-
+        int n = num.length - 1;
+        int sum = 0;
         final List<Integer> list = new ArrayList<>();
-        var carry = false;
-        while (n >= 0 || curr > 0 || carry) {
-            var sum = toNumWithIndex(num, n) + (curr % 10);
-            if (carry) {
-                sum++;
-                carry = false;
-            }
-
-            if (sum > 9) {
-                carry = true;
-            }
-
+        while (n >= 0 || sum > 0 || k > 0) {
+            sum += toNum(n--, num);
+            sum += k % 10;
             list.add(sum % 10);
-            n--;
-            curr /= 10;
+            sum /= 10;
+            k /= 10;
         }
-
         return list.reversed();
     }
 
-    private static int toNumWithIndex(int[] num, int idx) {
-        if (idx < 0) {
+    private static int toNum(int i, int[] digits) {
+        if (i < 0) {
             return 0;
         }
-        return num[idx];
+        return digits[i];
     }
 }

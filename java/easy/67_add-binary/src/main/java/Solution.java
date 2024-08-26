@@ -13,26 +13,16 @@ public class Solution {
      * @return binary sum as a string
      */
     public String addBinary(String a, String b) {
-        var n = a.length() - 1;
-        var m = b.length() - 1;
-
-        var sb = new StringBuilder();
-        var carry = 0;
-        while (n >= 0 || m >= 0 || carry > 0) {
-            carry += toInt(a, n);
-            carry += toInt(b, m);
-
-            if (carry % 2 == 1) {
-                sb.append('1');
-            } else {
-                sb.append('0');
-            }
-
+        final StringBuilder sb = new StringBuilder();
+        int n = a.length() - 1;
+        int m = b.length() - 1;
+        int carry = 0;
+        while (n >= 0 || m >= 0 || carry != 0) {
+            carry += toNum(a, n--);
+            carry += toNum(b, m--);
+            sb.append(carry % 2);
             carry /= 2;
-            n--;
-            m--;
         }
-
         return sb.reverse().toString();
     }
 
@@ -43,7 +33,7 @@ public class Solution {
      * @param idx index of digit to extract (can be negative)
      * @return single digit as a string
      */
-    private static int toInt(String str, int idx) {
+    private static int toNum(String str, int idx) {
         if (idx < 0) {
             return 0;
         }
